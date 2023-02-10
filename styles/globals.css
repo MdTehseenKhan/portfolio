@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+.font-brand {
+  font-family: "DM Sans";
+}
+
+* {
+  @apply transition scroll-smooth;
+}
+
+.app {
+  @apply bg-brand-primary font-brand;
+}
+
+/* ---------------------------------------- */
+/* Navbar */
+/* ---------------------------------------- */
+
+.navbar {
+  @apply w-full border-b flex justify-between items-center px-4 md:px-8 py-2 md:py-5 bg-slate-50/25 bg-opacity-25 backdrop-blur-sm fixed z-[2];
+}
+.navbar-logo {
+  @apply relative h-16 w-16 xl:h-44 xl:w-44;
+}
+.navbar-link {
+  @apply px-5 py-2.5 text-brand-gray hover:text-brand-secondary uppercase text-sm md:text-lg xl:text-3xl ease-in-out duration-300;
+}
+
+.animate-movefreely {
+  animation: movefreely 3s infinite;
+}
+
+@keyframes movefreely {
+  0%,
+  100% {
+    transform: translateY(-25px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}
+
+.app__container {
+  @apply w-full min-h-screen flex flex-row;
+}
+
+.app__flex {
+  @apply flex justify-center items-center;
+}
+
+.app__wrapper {
+  @apply w-full flex-1 flex-col pt-16 px-4 pb-8 sm:py-16 sm:px-8;
+}
+
+.copyright {
+  @apply w-full pt-8 flex flex-col justify-end items-end sm:p-8 md:p-0 md:pt-8;
+}
+
+.copyright p {
+  @apply uppercase text-brand-black;
+}
+
+.head-text {
+  @apply text-[2.75rem] font-extrabold text-center text-brand-black capitalize min-[2000px]:text-[4rem] max-[450px]:text-[2rem];
+}
+.head-text {
+  @apply text-brand-secondary;
+}
+
+.bold-text {
+  @apply text-base font-extrabold text-brand-black min-[2000px]:text-[2rem] max-[450px]:text-sm;
+}
+.app__social {
+  @apply flex justify-end items-center flex-col p-4 max-[500px]:hidden;
+}
+.app__social div {
+  @apply w-10 h-10 rounded-full bg-brand-primary my-1 border border-brand-lightgray flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-brand-secondary hover:border-brand-secondary min-[2000px]:w-[70px] min-[2000px]:h-[70px] min-[2000px]:my-2 min-[2000px]:mx-0;
+}
+.app__social div svg {
+  @apply w-4 h-4 text-brand-gray min-[2000px]:w-8 min-[2000px]:h-8;
+}
+.app__social div:hover svg {
+  @apply text-brand-primary;
+}

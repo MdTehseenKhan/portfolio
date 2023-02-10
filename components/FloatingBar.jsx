@@ -1,0 +1,72 @@
+import { useState, useEffect } from "react"
+import { useRouter } from "next/router"
+import Link from "next/link"
+import { HiHome, HiUserCircle, HiBriefcase, HiOutlineViewGridAdd, HiMail } from "react-icons/hi"
+
+const navItems = [
+  {
+    item: "",
+    Icon: HiHome,
+    title: "home",
+  },
+  {
+    item: "#about",
+    Icon: HiUserCircle,
+    title: "about",
+  },
+  {
+    item: "#work",
+    Icon: HiBriefcase,
+    title: "work",
+  },
+  {
+    item: "#skills",
+    Icon: HiOutlineViewGridAdd,
+    title: "skills",
+  },
+  {
+    item: "#contact",
+    Icon: HiMail,
+    title: "contact",
+  },
+]
+
+export default function FloatingBar() {
+  const router = useRouter()
+
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+    }
+    window.addEventListener("scroll", onScroll)
+
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
+
+  return (
+    <>
+      <div className="z-[999] fixed left-1/2 -translate-x-1/2 bottom-10 bg-gray-900/50 backdrop-blur-sm rounded-full">
+        <nav className="md:ml-auto p-2 text-gray-400 flex gap-2 items-center justify-center">
+          {navItems?.map(({ item, Icon, title }, i) => (
+            <Link
+              key={`nav-${i}`}
+              href={item}
+              title={title}
+              className={`p-3 hover:text-white hover:bg-gray-800 rounded-full ${
+                router.asPath === `/${item}` ? "text-white bg-pink-700" : ""
+              }`}
+            >
+              <Icon className="w-6 h-6" />
+            </Link>
+          ))}
+        </nav>
+      </div>
+    </>
+  )
+}
