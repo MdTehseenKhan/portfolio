@@ -7,7 +7,7 @@ const words = ["ReactJS Developer", "NextJS Developer", "MERN Stack Dev", "Expre
 const Banner = () => {
   return (
     <>
-      <section className="banner relative w-full h-screen bg-[url('/banner-bg.png')] bg-cover bg-no-repeat bg-top pt-40 md:pt-52 pb-24">
+      <section className="banner relative w-full h-screen bg-[url('/banner-bg.png')] bg-cover bg-no-repeat bg-top pt-40 lg:pt-52 pb-24">
         <div className="container mx-auto">
           <div className="flex items-center">
             <div className="mx-auto lg:mx-0 w-10/12 xl:w-7/12 flex flex-col">
@@ -23,11 +23,11 @@ const Banner = () => {
                 </span>
               </div>
 
-              <p className="text-gray-400 text-sm text-justify leading-normal md:mr-10">
-                A Hardworking and passionate developer who loves to build challenging apps. An undergraduate student of
-                Software Engineering at Department of Computer Science(UBIT), University of Karachi. I am eager to
-                contribute in a team. Learning Web Technologies for past 3+ years. I am born and raised in the "City of
-                Lights", Karachi (Pakistan).
+              <p className="text-gray-400 text-sm sm:text-base md:text-lg text-justify leading-normal md:mr-10">
+                A Hardworking and passionate developer who loves to build challenging apps • Undergraduate student of
+                Software Engineering at Department of Computer Science(UBIT), University of Karachi • Born and raised in
+                the "City of Lights", Karachi (Pakistan) • Learning Web Technologies for past 3+ years • Eager to
+                contribute in a team.
               </p>
 
               <button
