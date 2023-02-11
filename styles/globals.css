@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 .font-brand {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
 }
 
 .font-logo {
-  font-family: 'Great Vibes';
+  font-family: 'Great Vibes', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {

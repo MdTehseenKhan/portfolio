@@ -9,7 +9,7 @@ export default function Navbar() {
           <Link href="/">
             <span className="ml-3 font-logo text-white text-4xl">Tehseen</span>
           </Link>
-          <div className="flex flex-wrap gap-5 items-center justify-center">
+          <div className="flex flex-wrap gap-5 items-center justify-center ml-5">
             <a href="https://github.com/MdTehseenKhan" target="_blank" title="GitHub Profile">
               <BsGithub className="h-5 w-5 hover:text-white" />
             </a>

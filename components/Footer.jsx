@@ -1,4 +1,4 @@
 const Footer = () => {
-  return <nav>Footer</nav>
+  return <nav id="contact">Footer</nav>
 }
 export default Footer
