@@ -7,11 +7,11 @@ const words = ["ReactJS Developer", "NextJS Developer", "MERN Stack Dev", "Expre
 const Banner = () => {
   return (
     <>
-      <section className="banner relative w-full bg-[url('/banner-bg.png')] bg-cover bg-no-repeat bg-top pt-48 md:pt-52 pb-24">
+      <section className="banner w-full bg-[url('/banner-bg.png')] bg-cover pt-48 md:pt-52 pb-24">
         <div className="container flex mx-auto">
           <div className="w-full xl:w-7/12 px-10">
             <div className="text-center md:text-left mb-5">
-              <span className="tagline font-bold tracking-wide py-2 px-2.5 bg-gradient-to-r from-pink-700 to-purple-700 text-white text-lg md:text-xl border text-center">
+              <span className="tagline font-bold tracking-wide py-2 px-2.5 bg-gradient-to-r from-pink-700 to-purple-700 text-white text-lg md:text-xl border text-center rounded">
                 Welcome to my Portfolio
               </span>
             </div>

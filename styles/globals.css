@@ -2,15 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
-
 .font-brand {
   font-family: "Raleway";
 }
 
-.font-brand-body {
-  font-family: "DM Sans", sans-serif;
+.font-logo {
+  font-family: 'Great Vibes';
 }
 
 * {
@@ -22,7 +19,7 @@
 }
 
 .app {
-  @apply bg-brand-primary font-brand-body;
+  @apply bg-brand-primary font-brand;
 }
 
 /* ---------------------------------------- */
