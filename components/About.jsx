@@ -9,7 +9,7 @@ const About = () => {
       >
         <div className="container w-full relative pb-20 px-10 md:mx-auto l:px-0">
           <div className="about__box w-full flex flex-col lg:flex-row justify-center">
-            <div className="details -mt-10 lg:w-4/6 py-20 px-10 pb-44 lg:pb-10 lg:pr-32 bg-black shadow-lg bg-[url('/color-sharp2.png')] bg-cover bg-no-repeat rounded-lg">
+            <div className="details -mt-10 lg:w-4/6 py-20 px-10 pb-44 lg:pb-10 lg:pr-32 bg-black shadow-lg bg-[url('/color-sharp2.png')] bg-cover bg-no-repeat bg-right rounded-lg">
               <h1 className="about__title uppercase mb-8 text-2xl font-bold relative">💫 About Me</h1>
               <ul className="list-disc list-inside my-2">
                 <li>Enthusiastic Junior Web Developer. 🚀</li>
@@ -30,7 +30,7 @@ const About = () => {
             </div>
             <div className="profile-pic w-full lg:w-2/6 -mt-40 lg:mt-0 lg:-translate-x-20 flex justify-center items-center">
               <div className="relative w-72 h-72">
-                <Image src="/profile-pic.jpg" className="rounded-full shadow-lg" fill />
+                <Image src="/profile-pic.png" className="rounded-full shadow-lg border-8 border-white" fill />
               </div>
             </div>
           </div>

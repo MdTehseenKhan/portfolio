@@ -3,7 +3,7 @@ import { PageTitle, Navbar, Banner, About, Work, Skills, Testimonial, Footer, Fl
 export default function Home() {
   return (
     <>
-      <PageTitle>Md Tehseen Khan | Portfolio</PageTitle>
+      <PageTitle>Tehseen | MERN Stack Dev - Portfolio</PageTitle>
       <div className="app relative w-full overflow-x-hidden">
         <Navbar />
         <FloatingBar />

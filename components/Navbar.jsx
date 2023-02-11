@@ -20,7 +20,7 @@ export default function Navbar() {
               href="/MdTehseenKhanCV.pdf"
               title="Download CV"
               target="_blank"
-              className="border border-gray-400 hover:border-white py-2 px-3 hover:text-purple-700 md:hover: hover:bg-white "
+              className="border border-gray-400 hover:border-white py-2 px-3 hover:text-purple-700 md:hover:text-black hover:bg-white "
               download
             >
               Download CV
