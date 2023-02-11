@@ -51,7 +51,7 @@ export default function FloatingBar() {
 
   return (
     <>
-      <div className="z-[999] fixed left-1/2 -translate-x-1/2 bottom-10 bg-gray-900/50 backdrop-blur-sm rounded-full">
+      <div className="z-[999] fixed left-1/2 -translate-x-1/2 bottom-10 bg-gray-900/50 backdrop-blur-sm rounded-full shadow-lg">
         <nav className="md:ml-auto p-2 text-gray-400 flex gap-2 items-center justify-center">
           {navItems?.map(({ item, Icon, title }, i) => (
             <Link
