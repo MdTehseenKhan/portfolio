@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <PageTitle>Md Tehseen Khan | Portfolio</PageTitle>
-      <div className="relative w-full overflow-x-hidden">
+      <div className="app relative w-full overflow-x-hidden">
         <Navbar />
         <FloatingBar />
         <Banner />
