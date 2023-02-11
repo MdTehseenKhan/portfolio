@@ -7,7 +7,7 @@
 }
 
 .font-logo {
-  font-family: 'Great Vibes', sans-serif;
+  font-family: "Great Vibes", sans-serif;
 }
 
 html {
@@ -52,6 +52,10 @@ html {
   50% {
     transform: translateY(0px);
   }
+}
+
+.about__title::after {
+  @apply content-[''] absolute ml-2 bottom-1 w-20 h-1 bg-gradient-to-r from-pink-700 to-purple-700;
 }
 
 .app__container {
