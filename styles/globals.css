@@ -12,6 +12,10 @@
   @apply transition scroll-smooth;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .app {
   @apply bg-brand-primary font-brand;
 }

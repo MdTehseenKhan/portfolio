@@ -7,8 +7,8 @@ export default function Navbar() {
       <header className="absolute z-50 w-full text-gray-400 bg-transparent">
         <div className="container mx-auto flex flex-wrap gap-5 p-3 flex-row items-center justify-center md:justify-between">
           <a className="flex title-font font-medium items-center text-white">
-            <Image src="/favicon.png" width={30} height={30} />
-            <span className="ml-3 text-xl">Portfolio</span>
+            {/* <Image src="/favicon.png" width={30} height={30} /> */}
+            <span className="ml-3 text-4xl">LOGO</span>
           </a>
           <div className="flex flex-wrap gap-5 items-center justify-center">
             <a href="https://github.com/MdTehseenKhan" target="_blank" title="GitHub Profile">
