@@ -1,4 +1,4 @@
 const Skills = () => {
-  return <nav>Skills</nav>
+  return <section id="skills">Skills</section>
 }
 export default Skills

@@ -1,9 +1,8 @@
 import Head from "next/head"
 import { client } from "@/client"
-import { Navbar, Banner, About, Work, Skills, Testimonial, Footer, FloatingBar } from "@/components"
+import { Navbar, FloatingBar, Banner, About, Work, Skills, Footer } from "@/components"
 
-export default function Home({ works }) {
-  console.log(works)
+export default function Home({ works, skills }) {
   return (
     <>
       <Head>
@@ -15,27 +14,27 @@ export default function Home({ works }) {
         <title>Tehseen | MERN Stack Dev - Portfolio</title>
       </Head>
 
-      <div className="app relative w-full overflow-x-hidden">
+      <main className="app relative w-full overflow-x-hidden">
         <Navbar />
         <FloatingBar />
         <Banner />
         <About />
-        <Work />
-        <Skills />
-        <Testimonial />
+        <Work works={works} />
+        <Skills skills={skills} />
         <Footer />
-      </div>
+      </main>
     </>
   )
 }
 
 export async function getServerSideProps() {
-  const query = "*[_type == 'works']"
-  const works = await client.fetch(query)
+  const works = await client.fetch("*[_type == 'works']")
+  const skills = await client.fetch("*[_type == 'skills']")
 
   return {
     props: {
       works,
+      skills,
     },
   }
 }

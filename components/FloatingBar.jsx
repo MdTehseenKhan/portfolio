@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import { useRouter } from "next/router"
-import Link from "next/link"
 import { HiHome, HiUserCircle, HiBriefcase, HiOutlineViewGridAdd, HiMail } from "react-icons/hi"
 
 const navItems = [
@@ -34,27 +33,14 @@ const navItems = [
 export default function FloatingBar() {
   const router = useRouter()
 
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true)
-      } else {
-        setScrolled(false)
-      }
-    }
-    window.addEventListener("scroll", onScroll)
-
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
+  console.log(router.asPath)
 
   return (
     <>
       <div className="z-[999] fixed left-1/2 -translate-x-1/2 bottom-10 bg-gray-900/50 backdrop-blur-sm rounded-full shadow-lg">
         <nav className="md:ml-auto p-2 text-gray-400 flex gap-2 items-center justify-center">
           {navItems?.map(({ item, Icon, title }, i) => (
-            <Link
+            <a
               key={`nav-${i}`}
               href={item}
               title={title}
@@ -63,7 +49,7 @@ export default function FloatingBar() {
               }`}
             >
               <Icon className="w-6 h-6" />
-            </Link>
+            </a>
           ))}
         </nav>
       </div>
