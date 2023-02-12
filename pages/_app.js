@@ -1,5 +1,4 @@
 import { Router } from "next/router"
-import { Layout } from "@/components"
 import ProgressBar from "@badrap/bar-of-progress"
 
 import "@/styles/globals.css"
@@ -16,11 +15,7 @@ Router.events.on("routeChangeComplete", progress.finish)
 Router.events.on("routeChangeError", progress.finish)
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  )
+  return <Component {...pageProps} />
 }
 
 export default MyApp

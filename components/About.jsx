@@ -32,6 +32,7 @@ const About = () => {
               <div className="relative w-72 h-72">
                 <Image
                   src="/profile-pic.png"
+                  alt="profile pic"
                   className="rounded-full pointer-events-none shadow-lg border-8 border-white"
                   fill
                 />
