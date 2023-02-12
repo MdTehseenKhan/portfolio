@@ -15,7 +15,7 @@ html {
 }
 
 * {
-  @apply transition;
+  @apply transition font-brand;
 }
 
 ::-webkit-scrollbar {

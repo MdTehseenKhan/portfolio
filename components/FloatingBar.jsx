@@ -1,10 +1,9 @@
-import { useState, useEffect } from "react"
 import { useRouter } from "next/router"
 import { HiHome, HiUserCircle, HiBriefcase, HiOutlineViewGridAdd, HiMail } from "react-icons/hi"
 
 const navItems = [
   {
-    item: "",
+    item: "#",
     Icon: HiHome,
     title: "home",
   },
@@ -32,8 +31,6 @@ const navItems = [
 
 export default function FloatingBar() {
   const router = useRouter()
-
-  console.log(router.asPath)
 
   return (
     <>

@@ -9,7 +9,7 @@ const Banner = () => {
     <>
       <section className="banner w-full bg-black bg-[url('/banner-bg.png')] bg-cover pt-44 md:pt-48 pb-24">
         <div className="container relative flex mx-auto">
-          <div className="absolute hidden lg:block top-[20%] right-[5%] animate-movefreely">
+          <div className="absolute hidden pointer-events-none lg:block top-[20%] right-[5%] animate-movefreely">
             <Image src="/banner-img.svg" alt="Banner Image" width={400} height={400} className="pointer-events-none" />
           </div>
 
@@ -20,7 +20,7 @@ const Banner = () => {
               </span>
             </div>
 
-            <div className="text-6xl text-center drop-shadow-lg md:text-left font-brand font-extrabold tracking-wide mb-5 text-white">
+            <div className="text-5xl text-center drop-shadow-lg md:text-left font-brand font-extrabold tracking-wide mb-5 text-white">
               Hi, I am Tehseen
               <br />
               <div className="text-purple-600 drop-shadow-lg md:text-6xl h-28 md:h-16">

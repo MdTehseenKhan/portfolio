@@ -10,11 +10,11 @@ export default function Home({ works, skills }) {
 
         <meta name="description" content="Description" />
 
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/banner-img.svg" />
         <title>Tehseen | MERN Stack Dev - Portfolio</title>
       </Head>
 
-      <main className="app relative w-full overflow-x-hidden">
+      <main className="app relative w-full overflow-x-hidden bg-[#151315]">
         <Navbar />
         <FloatingBar />
         <Banner />

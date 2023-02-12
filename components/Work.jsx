@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { BsGithub } from "react-icons/bs"
 import { urlFor } from "@/client"
 
@@ -7,22 +6,27 @@ const Work = ({ works }) => {
   return (
     <section
       id="work"
-      className="w-full text-white bg-[#151315] bg-[url('/color-sharp2.png')] bg-cover bg-no-repeat bg-right"
+      className="w-full text-white bg-[#151315] bg-[url('/color-sharp.png')] bg-cover bg-no-repeat bg-left-bottom"
     >
-      <div className="container mx-auto px-5 md:p-10 pt-20">
+      <div className="container mx-auto px-5 md:p-10 py-20">
         <h1 className="text-3xl font-brand font-bold text-center">
           I Know that <span className="text-purple-700">Good Apps</span> Means
           <span className="text-purple-700"> Good Business</span>
         </h1>
 
-        <h2 className="uppercase my-20 text-center font-brand font-extrabold text-2xl relative after-line">Projects</h2>
+        <h2 className="uppercase my-20 -ml-20 text-center font-brand font-extrabold text-2xl relative after-line">
+          ✨Projects
+        </h2>
 
-        <div className="projects my-10 flex flex-wrap gap-5 justify-center items-center">
+        <div className="projects my-10 flex flex-wrap gap-5 md:gap-10 justify-center items-center">
           {works?.map(({ _id, title, projectLink, codeLink, imgUrl, tags }) => (
             <>
-              <div key={_id} className="project-card bg-[#151315] w-72 rounded-lg p-3 shadow-md hover:shadow-xl">
-                <div className="cover-image relative h-44 w-full overflow-hidden pointer-events-none mb-5 rounded-tr rounded-tl">
-                  <Image src={urlFor(imgUrl)} alt={title} fill />
+              <div
+                key={_id}
+                className="project-card bg-[#151315] w-72 rounded-lg p-3 shadow-[0_2px_8px_0_#fff2] hover:shadow-[0_0_12px_#fff5]"
+              >
+                <div className="cover-image relative pointer-events-none mb-5">
+                  <img src={urlFor(imgUrl)} alt={title} className=" h-44 w-full object-cover rounded-lg" />
                 </div>
                 <div className="project-description">
                   <h1 className="text-xl font-brand font-bold mb-3 tracking-wide">{title}</h1>
@@ -37,7 +41,7 @@ const Work = ({ works }) => {
                     ))}
                   </div>
                   <div className="visit flex justify-between items-center">
-                    <a href={projectLink} target="_blank" className="brand-btn" title="View Demo">
+                    <a href={projectLink} target="_blank" className="brand-btn rounded-lg" title="View Demo">
                       View Demo
                     </a>
                     <a href={codeLink} target="_blank" title="Code">
