@@ -1,8 +1,8 @@
+import { Suspense } from "react"
 import { BsGithub } from "react-icons/bs"
 import { urlFor } from "@/client"
 
 const Work = ({ works }) => {
-  console.log(works)
   return (
     <section
       id="work"
@@ -23,7 +23,7 @@ const Work = ({ works }) => {
             <>
               <div
                 key={_id}
-                className="project-card bg-[#151315] w-72 rounded-lg p-3 shadow-[0_2px_8px_0_#fff2] hover:shadow-[0_0_12px_#fff5]"
+                className="project-card bg-[#151315] w-72 rounded-lg p-3 hover:scale-105 shadow-[0_2px_8px_0_#fff2] hover:shadow-[0_0_12px_#fff5]"
               >
                 <div className="cover-image relative pointer-events-none mb-5">
                   <img src={urlFor(imgUrl)} alt={title} className=" h-44 w-full object-cover rounded-lg" />

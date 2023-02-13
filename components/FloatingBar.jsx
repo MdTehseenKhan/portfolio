@@ -1,9 +1,10 @@
+import { useState } from "react"
 import { useRouter } from "next/router"
 import { HiHome, HiUserCircle, HiBriefcase, HiOutlineViewGridAdd, HiMail } from "react-icons/hi"
 
 const navItems = [
   {
-    item: "#",
+    item: "/",
     Icon: HiHome,
     title: "home",
   },
@@ -30,6 +31,7 @@ const navItems = [
 ]
 
 export default function FloatingBar() {
+  const [active, setActive] = useState("/")
   const router = useRouter()
 
   return (
@@ -41,8 +43,9 @@ export default function FloatingBar() {
               key={`nav-${i}`}
               href={item}
               title={title}
+              onClick={() => setActive(window.location.hash)}
               className={`p-3 hover:text-white hover:bg-gray-800 rounded-full ${
-                router.asPath === `/${item}` ? "text-white bg-pink-700" : ""
+                item === active ? "text-white bg-pink-700" : ""
               }`}
             >
               <Icon className="w-6 h-6" />
