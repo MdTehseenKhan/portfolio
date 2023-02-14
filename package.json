@@ -11,13 +11,14 @@
   "dependencies": {
     "@badrap/bar-of-progress": "^0.2.2",
     "@formspree/react": "^2.4.1",
-    "@sanity/client": "^4.0.1",
-    "@sanity/image-url": "^1.0.2",
+    "@sanity/client": "^3.4.1",
     "framer-motion": "^9.0.2",
     "next": "^13.1.6",
+    "next-sanity-image": "^5.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
+    "react-scroll": "^1.8.9",
     "react-simple-typewriter": "^5.0.1"
   },
   "devDependencies": {

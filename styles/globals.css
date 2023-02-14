@@ -29,17 +29,9 @@ html {
 /* ---------------------------------------- */
 /* Navbar */
 /* ---------------------------------------- */
-
-.navbar {
-  @apply w-full border-b flex justify-between items-center px-4 md:px-8 py-2 md:py-5 bg-slate-50/25 bg-opacity-25 backdrop-blur-sm fixed z-[2];
+.active {
+  @apply text-white bg-pink-700;
 }
-.navbar-logo {
-  @apply relative h-16 w-16 xl:h-44 xl:w-44;
-}
-.navbar-link {
-  @apply px-5 py-2.5 text-brand-gray hover:text-brand-secondary uppercase text-sm md:text-lg xl:text-3xl ease-in-out duration-300;
-}
-
 .animate-movefreely {
   animation: movefreely 3s infinite;
 }
@@ -55,9 +47,13 @@ html {
 }
 
 .after-line::after {
-  @apply content-[''] absolute ml-2 bottom-1 w-20 h-1 bg-gradient-to-r from-pink-700 to-purple-700;
+  @apply content-[''] absolute ml-2 bottom-1 w-16 sm:w-20 h-1 bg-gradient-to-r from-pink-700 to-purple-700;
 }
 
 .brand-btn {
   @apply border border-gray-400 hover:border-white py-2 px-3 hover:text-black hover:bg-white;
+}
+
+.input-field {
+  @apply w-full bg-gray-800/30 mt-2 rounded border border-gray-700 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 outline-none text-gray-100 py-1 px-3 leading-8;
 }

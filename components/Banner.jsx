@@ -7,7 +7,7 @@ const words = ["ReactJS Developer", "NextJS Developer", "MERN Stack Dev", "Expre
 const Banner = () => {
   return (
     <>
-      <section className="banner w-full bg-black bg-[url('/banner-bg.png')] bg-cover pt-44 md:pt-48 pb-24">
+      <section id="home" className="banner w-full bg-black bg-[url('/banner-bg.png')] bg-cover pt-44 md:pt-48 pb-24">
         <div className="container relative flex mx-auto">
           <div className="absolute hidden pointer-events-none lg:block top-[20%] right-[5%] animate-movefreely">
             <Image src="/banner-img.svg" alt="Banner Image" width={400} height={400} className="pointer-events-none" />

@@ -5,7 +5,7 @@ import "@/styles/globals.css"
 
 const progress = new ProgressBar({
   size: 4,
-  color: "#7c3aed",
+  color: "#9333EA",
   className: "z-50",
   delay: 100,
 })

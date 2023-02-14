@@ -9,7 +9,7 @@ const About = () => {
       >
         <div className="container w-full relative pb-20 px-5 sm:px-10 sm:mx-auto l:px-0">
           <div className="about__box w-full flex flex-col lg:flex-row justify-center items-center">
-            <div className="details -mt-10 w-full lg:w-4/6 py-20 px-10 pb-44 lg:pb-10 lg:pr-32 bg-black shadow-lg bg-[url('/color-sharp2.png')] bg-cover bg-no-repeat bg-right rounded-xl">
+            <div className="details -mt-10 w-full lg:w-4/6 py-20 px-10 pb-44 lg:pb-10 lg:pr-32 bg-black shadow-[0_0_8px_#fff2] bg-[url('/color-sharp2.png')] bg-cover bg-no-repeat bg-right rounded-xl">
               <h1 className="after-line uppercase mb-8 text-2xl font-bold relative">💫 About Me</h1>
               <ul className="list-disc list-inside my-2">
                 <li>Enthusiastic Junior Web Developer. 🚀</li>

@@ -16,7 +16,13 @@ export default function Navbar() {
             <a href="https://linkedin.com/in/md-tehseen-khan" target="_blank" title="LinkedIn Profile">
               <BsLinkedin className="h-5 w-5 hover:text-white" />
             </a>
-            <a href="/MdTehseenKhanCV.pdf" title="Download CV" target="_blank" className="brand-btn" download>
+            <a
+              href="/(Resume)-MdTehseenKhan-MERN.pdf"
+              title="Download CV"
+              target="_blank"
+              className="brand-btn"
+              download
+            >
               Download CV
             </a>
           </div>
