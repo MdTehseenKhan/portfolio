@@ -3,6 +3,8 @@ import { client } from "@/client"
 import { useNextSanityImage } from "next-sanity-image"
 
 const Skills = ({ skills }) => {
+  skills.sort((a, b) => parseInt(a.serial_no) - parseInt(b.serial_no))
+
   return (
     <section
       id="skills"

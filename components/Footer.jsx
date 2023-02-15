@@ -55,9 +55,9 @@ const Footer = () => {
             <div className="flex flex-col gap-3 items-center text-gray-400 p-2 w-full pt-5 mt-7 border-t border-gray-800 text-center">
               <a
                 href="mailto:connect.tehseenkhan@gmail.com?subject=Hello%20Tehseen&body=Hire%20me"
-                className="inline-flex items-center text-gray-300 hover:text-white"
+                className="inline-flex items-center text-gray-300 hover:text-white group"
               >
-                <div className="relative w-7 h-7 p-2 mr-2">
+                <div className="relative w-5 h-5 group-hover:scale-105 p-2 mr-2">
                   <Image src="/email.png" alt="Email me" fill className="pointer-events-none" />
                 </div>
                 <span>connect.tehseenkhan@gmail.com</span>
