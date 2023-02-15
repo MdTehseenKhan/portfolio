@@ -4,7 +4,7 @@ import { client } from "@/client"
 import { Navbar, FloatingBar, Banner, About, Work, Skills, Footer } from "@/components"
 
 export default function Home({ works, skills }) {
-  const [active, setActive] = useState("home")
+  const [active, setActive] = useState((typeof window !== "undefined" && window.location.hash) || "home")
 
   return (
     <>
