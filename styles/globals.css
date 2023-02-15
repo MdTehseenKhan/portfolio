@@ -22,16 +22,10 @@ html {
   display: none;
 }
 
-.app {
-  @apply bg-brand-primary font-brand;
-}
-
 /* ---------------------------------------- */
 /* Navbar */
 /* ---------------------------------------- */
-.active {
-  @apply text-white bg-pink-700;
-}
+
 .animate-movefreely {
   animation: movefreely 3s infinite;
 }
@@ -56,4 +50,20 @@ html {
 
 .input-field {
   @apply w-full bg-gray-800/30 mt-2 rounded border border-gray-700 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 outline-none text-gray-100 py-1 px-3 leading-8;
+}
+
+.contact-btn {
+  display: flex;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem auto;
+  color: #fff;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
+  border-radius: 0.5rem /* 8px */;
+  background-size: 200%;
+  background-image: linear-gradient(to right, #be185d, #6b21a8, #be185d);
+  transition: 0.5s;
+}
+.contact-btn:hover {
+  background-position: 100%;
 }

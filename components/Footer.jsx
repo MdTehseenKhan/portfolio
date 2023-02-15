@@ -48,17 +48,14 @@ const Footer = () => {
               <div className="ml-2 p-2 text-red-600 flex">
                 <ValidationError prefix="Message" field="message" errors={state.errors} />
               </div>
-              <button
-                type="submit"
-                className="flex mx-auto m-2 text-white bg-gradient-to-r from-pink-700 to-purple-800 py-2 px-8 hover:bg-gradient-to-l rounded-lg text-lg"
-              >
+              <button type="submit" className="contact-btn">
                 Send Message
               </button>
             </form>
             <div className="flex flex-col gap-3 items-center text-gray-400 p-2 w-full pt-5 mt-7 border-t border-gray-800 text-center">
               <a
                 href="mailto:connect.tehseenkhan@gmail.com?subject=Hello%20Tehseen&body=Hire%20me"
-                className="inline-flex items-center text-purple-500 hover:text-purple-600"
+                className="inline-flex items-center text-gray-300 hover:text-white"
               >
                 <div className="relative w-7 h-7 p-2 mr-2">
                   <Image src="/email.png" alt="Email me" fill className="pointer-events-none" />

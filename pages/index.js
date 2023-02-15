@@ -1,8 +1,11 @@
+import { useState } from "react"
 import Head from "next/head"
 import { client } from "@/client"
 import { Navbar, FloatingBar, Banner, About, Work, Skills, Footer } from "@/components"
 
 export default function Home({ works, skills }) {
+  const [active, setActive] = useState(typeof window !== "undefined" && window?.location?.hash?.slice(1))
+
   return (
     <>
       <Head>
@@ -16,8 +19,8 @@ export default function Home({ works, skills }) {
 
       <main className="app relative w-full overflow-x-hidden bg-[#151315]">
         <Navbar />
-        <FloatingBar />
-        <Banner />
+        <FloatingBar active={active} setActive={setActive} />
+        <Banner setActive={setActive} />
         <About />
         <Work works={works} />
         <Skills skills={skills} />

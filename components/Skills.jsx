@@ -19,17 +19,14 @@ const Skills = ({ skills }) => {
         </h2>
 
         <div className="skills flex flex-wrap gap-5 justify-center items-center">
-          {skills?.map(({ _id, name, bgColor, icon }) => {
-            const imageProps = useNextSanityImage(client, icon)
-            return (
-              <div key={_id} className="flex flex-col gap-3 items-center">
-                <div className={`relative rounded-full w-32 h-32 p-5 bg-purple-400/20 bg-[${bgColor}]`} title={name}>
-                  <Image {...imageProps} alt={name} className="w-full h-full pointer-events-none" />
-                </div>
-                <h3 className="font-brand text-gray-300">{name}</h3>
+          {skills?.map(({ _id, name, bgColor, icon }) => (
+            <div key={_id} className="flex flex-col gap-3 items-center">
+              <div className={`relative rounded-full w-32 h-32 p-5 bg-purple-400/20 bg-[${bgColor}]`} title={name}>
+                <Image {...useNextSanityImage(client, icon)} alt={name} className="w-full h-full pointer-events-none" />
               </div>
-            )
-          })}
+              <h3 className="font-brand text-gray-300">{name}</h3>
+            </div>
+          ))}
         </div>
       </div>
     </section>

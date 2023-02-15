@@ -1,11 +1,12 @@
 import Link from "next/link"
 import { BsGithub, BsLinkedin } from "react-icons/bs"
+import { MdDownload } from "react-icons/md"
 
 export default function Navbar() {
   return (
     <>
       <header className="absolute z-50 w-full text-gray-400 bg-transparent">
-        <div className="container mx-auto px-10 flex flex-wrap gap-5 py-3 items-center justify-center md:justify-between">
+        <div className="container mx-auto px-10 flex flex-wrap gap-5 py-3 items-center justify-between">
           <Link href="/">
             <span className="ml-3 font-logo text-white text-4xl">Tehseen</span>
           </Link>
@@ -20,7 +21,16 @@ export default function Navbar() {
               href="/(Resume)-MdTehseenKhan-MERN.pdf"
               title="Download CV"
               target="_blank"
-              className="brand-btn"
+              className="md:hidden"
+              download
+            >
+              <MdDownload className="h-5 w-5 hover:text-white" />
+            </a>
+            <a
+              href="/(Resume)-MdTehseenKhan-MERN.pdf"
+              title="Download CV"
+              target="_blank"
+              className="brand-btn hidden md:inline-flex"
               download
             >
               Download CV
