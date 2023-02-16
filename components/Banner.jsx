@@ -28,7 +28,7 @@ const Banner = ({ setActive }) => {
             </div>
 
             <div className="text-5xl text-center drop-shadow-lg md:text-left font-brand font-extrabold tracking-wide mb-5 text-white">
-              Hi, I am Tehseen
+              I am Tehseen
               <br />
               <div className="text-purple-600 drop-shadow-lg lg:text-6xl h-28 md:h-16">
                 <Typewriter words={words} loop={0} cursor />

@@ -41,7 +41,7 @@ export default function FloatingBar({ active, setActive }) {
                 item === active ? "text-white bg-pink-700" : ""
               }`}
             >
-              <Icon className="w-6 h-6" />
+              <Icon className="w-7 h-7" />
             </a>
           ))}
         </nav>
