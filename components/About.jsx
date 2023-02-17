@@ -31,7 +31,7 @@ const About = () => {
             <div className="profile-pic w-full lg:w-2/6 -mt-40 lg:mt-0 lg:-translate-x-20 flex justify-center items-center">
               <div className="relative w-72 h-72">
                 <Image
-                  src="/profile-pic.png"
+                  src="/profile-pic.jpg"
                   alt="profile pic"
                   className="rounded-full pointer-events-none shadow-lg border-8 border-white"
                   fill
