@@ -1,0 +1,31 @@
+.aboutSection {
+  @apply text-white bg-[#151315] bg-[url('/color-sharp.png')] bg-cover bg-no-repeat;
+}
+
+.aboutContainer {
+  @apply container w-full relative pb-20 px-5 sm:px-10 sm:mx-auto lg:px-0;
+}
+
+.aboutBox {
+  @apply w-full flex flex-col lg:flex-row justify-center items-center;
+}
+.details {
+  @apply -mt-10 w-full lg:w-4/6 py-20 px-10 pb-44 lg:pb-10 lg:pr-32 bg-black shadow-[0_0_8px_#fff2] bg-[url('/color-sharp2.png')] bg-cover bg-no-repeat bg-right rounded-xl;
+}
+.afterLine {
+  @apply uppercase mb-8 text-2xl font-bold relative -ml-3;
+}
+.list {
+  @apply list-disc list-inside my-2 text-sm md:text-base;
+}
+
+.profilePic {
+  @apply w-full lg:w-2/6 -mt-40 lg:mt-0 lg:-translate-x-20 flex justify-center items-center;
+}
+
+.profilePic > div {
+  @apply relative w-72 h-72;
+}
+.profilePic > div img {
+  @apply rounded-full pointer-events-none shadow-lg border-8 border-white;
+}

@@ -1,0 +1,53 @@
+.bannerSection {
+  @apply w-full bg-black bg-[url('/banner-bg.png')] bg-cover pt-44 md:pt-48 pb-24;
+}
+
+.bannerContainer {
+  @apply container relative flex mx-auto;
+}
+
+.bannerImg {
+  @apply absolute hidden lg:block top-[20%] right-[5%] animate-movefreely;
+}
+
+.content {
+  @apply lg:w-8/12 px-10 space-y-5 text-center md:text-left;
+}
+.tagline {
+  @apply font-bold tracking-wide py-2 px-2.5 bg-gradient-to-r from-pink-700 to-purple-700 text-white text-lg md:text-xl border text-center rounded-lg;
+}
+.title {
+  @apply text-5xl text-center drop-shadow-lg md:text-left font-black tracking-wide mb-5 text-white;
+}
+.typewriter {
+  @apply text-purple-600 drop-shadow-lg lg:text-6xl h-28 md:h-16;
+}
+.details {
+  @apply text-gray-400 md:text-lg text-justify leading-normal md:mr-16;
+}
+
+.connect {
+  @apply flex;
+}
+.connectBtn {
+  @apply text-white font-bold text-xl mt-7;
+}
+.connectBtn span {
+  @apply h-6 w-6 ml-2 inline-flex;
+}
+.connectBtn:hover span {
+  @apply translate-x-3;
+}
+
+.animate-movefreely {
+  animation: movefreely 3s infinite;
+}
+@keyframes movefreely {
+  0%,
+  100% {
+    transform: translateY(-25px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}

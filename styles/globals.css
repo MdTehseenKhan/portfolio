@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-brand {
+  font-family: "Raleway", sans-serif;
+}
+
+* {
+  @apply transition font-brand;
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  @apply pointer-events-none;
+}
+
+.font-logo {
+  font-family: "Great Vibes", sans-serif;
+}
+
+.brand-btn {
+  @apply border border-gray-400 hover:border-white py-2 px-3 hover:text-black hover:bg-white;
+}

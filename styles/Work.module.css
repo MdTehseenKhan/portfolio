@@ -1,0 +1,63 @@
+.after-line::after {
+  @apply content-[''] absolute ml-2 bottom-1 w-16 sm:w-20 h-1 bg-gradient-to-r from-pink-700 to-purple-700;
+}
+
+.brand-btn {
+  @apply border border-gray-400 hover:border-white py-2 px-3 hover:text-black hover:bg-white;
+}
+
+/*  */
+
+.workSection {
+  @apply w-full text-white bg-[#151315] bg-[url('/color-sharp.png')] bg-cover bg-no-repeat bg-left-bottom;
+}
+
+.workContainer {
+  @apply container mx-auto px-5 md:p-10 py-10 md:py-20;
+}
+
+.head {
+  @apply text-3xl font-bold text-center;
+}
+.head span {
+  @apply text-purple-700;
+}
+
+.title {
+  @apply uppercase my-10 sm:mb-20 -ml-20 text-center font-extrabold text-2xl relative after-line;
+}
+
+.projects {
+  @apply my-10 flex flex-wrap gap-5 md:gap-10 justify-center items-center;
+}
+.projectCard {
+  @apply bg-[#151315] w-72 rounded-lg p-3 hover:scale-105 shadow-[0_2px_8px_0_#fff2] hover:shadow-[0_0_12px_#fff5];
+}
+
+.coverImg {
+  @apply relative mb-5;
+}
+.coverImg img {
+  @apply h-44 w-full overflow-hidden object-cover rounded-lg;
+}
+
+.projectTitle {
+  @apply text-xl font-bold mb-3 tracking-wide;
+}
+
+.tags {
+  @apply flex gap-3 mb-5 overflow-x-auto;
+}
+.tags span {
+  @apply text-xs py-1 px-2 rounded-full cursor-pointer hover:bg-black/70;
+}
+
+.links {
+  @apply flex justify-between items-center;
+}
+.demoLink {
+  @apply brand-btn rounded-lg;
+}
+.github {
+  @apply w-7 h-7 text-gray-300 hover:text-white;
+}

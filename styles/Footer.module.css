@@ -1,0 +1,86 @@
+.afterLine::after {
+  @apply content-[''] absolute ml-2 bottom-1 w-16 sm:w-20 h-1 bg-gradient-to-r from-pink-700 to-purple-700;
+}
+
+/*  */
+
+.footerSection {
+  @apply w-full text-white bg-[#151315] bg-[url('/color-sharp2.png')] bg-cover bg-no-repeat bg-bottom;
+}
+.footerContainer {
+  @apply container mx-auto px-5 md:p-10 py-10 md:py-20;
+}
+.head {
+  @apply text-3xl font-bold text-center;
+}
+.head span {
+  @apply text-purple-700;
+}
+
+.title {
+  @apply uppercase my-10 -ml-20 text-center font-extrabold text-2xl relative afterLine;
+}
+
+/*  */
+
+.formContainer {
+  @apply lg:w-1/2 md:w-2/3 mx-auto;
+}
+.form {
+  @apply flex flex-wrap -m-2;
+}
+
+.inputLabel {
+  @apply text-sm p-2 w-full md:w-1/2;
+}
+.inputField {
+  @apply w-full bg-gray-800/30 mt-2 rounded border border-gray-700 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 outline-none text-gray-100 py-1 px-3 leading-8;
+}
+.invalidText {
+  @apply ml-2 p-2 text-red-600 flex;
+}
+.messageField {
+  @apply p-2 w-full text-sm;
+}
+.messageField textarea {
+  @apply inputField h-32 resize-none leading-6;
+}
+.contactBtn {
+  display: flex;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem auto;
+  color: #fff;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
+  border-radius: 0.5rem /* 8px */;
+  background-size: 200%;
+  background-image: linear-gradient(to right, #be185d, #6b21a8, #be185d);
+  transition: 0.5s;
+}
+.contactBtn:hover {
+  background-position: 100%;
+}
+
+/*  */
+
+.footer {
+  @apply flex flex-col gap-3 items-center text-gray-400 p-2 w-full pt-5 mt-7 border-t border-gray-800 text-center;
+}
+.mailLink {
+  @apply inline-flex items-center text-gray-300 hover:text-white;
+}
+.mailImg {
+  @apply relative w-5 h-5 p-2 mr-2;
+}
+.mailLink:hover .mailImg {
+  @apply scale-105;
+}
+.links {
+  @apply mb-20 md:mb-10 mt-3 inline-flex;
+}
+.icons {
+  @apply flex flex-wrap gap-5 items-center;
+}
+.icon {
+  @apply h-5 w-5 hover:text-white;
+}

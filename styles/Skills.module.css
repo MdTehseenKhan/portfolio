@@ -1,0 +1,37 @@
+.after-line::after {
+  @apply content-[''] absolute ml-2 bottom-1 w-16 sm:w-20 h-1 bg-gradient-to-r from-pink-700 to-purple-700;
+}
+
+/*  */
+
+.skillsSection {
+  @apply relative w-full text-white bg-[#151315] bg-[url('/color-sharp2.png')] bg-cover bg-no-repeat;
+}
+.skillsContainer {
+  @apply container mx-auto flex flex-col px-5 md:px-20 py-10 md:py-20;
+}
+.head {
+  @apply text-3xl font-bold text-center;
+}
+.head span {
+  @apply text-purple-700;
+}
+.title {
+  @apply uppercase my-10 -ml-20 text-center font-extrabold text-2xl relative after-line;
+}
+
+.skills {
+  @apply flex flex-wrap gap-5 justify-center items-center;
+}
+.skill {
+  @apply flex flex-col gap-3 items-center;
+}
+.skillCircle {
+  @apply relative rounded-full w-32 h-32 p-5 bg-opacity-20 bg-purple-400;
+}
+.skillImg {
+  @apply w-full h-full pointer-events-none;
+}
+.skillName {
+  @apply text-gray-300;
+}
