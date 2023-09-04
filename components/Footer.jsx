@@ -1,18 +1,38 @@
-import { useRouter } from "next/router"
+import { useRef } from "react"
 import Image from "next/image"
+import { toast } from "react-hot-toast"
 
-import { useForm, ValidationError } from "@formspree/react"
+import emailjs from "@emailjs/browser"
 import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs"
 import { MdDownload } from "react-icons/md"
 
 import styles from "@/styles/Footer.module.css"
 
 const Footer = () => {
-  const router = useRouter()
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM_SECRET_ID)
+  const formRef = useRef()
 
-  if (state.succeeded) {
-    return router.push("/thank-you")
+  function handleSubmit(e) {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          formRef.current[0].value = ""
+          formRef.current[1].value = ""
+          formRef.current[2].value = ""
+
+          toast.success("Operation Successfull")
+        },
+        (error) => {
+          toast.error("Something went wrong!")
+        }
+      )
   }
 
   return (
@@ -27,25 +47,29 @@ const Footer = () => {
           <h2 className={styles.title}>📞Get in Touch</h2>
 
           <div className={styles.formContainer}>
-            <form onSubmit={handleSubmit} className={styles.form}>
+            <form ref={formRef} onSubmit={handleSubmit} className={styles.form}>
               <label className={styles.inputLabel}>
                 Name
-                <input type="text" name="name" required className={styles.inputField} />
+                <input
+                  type="text"
+                  name="from_name"
+                  required
+                  minLength={3}
+                  maxLength={24}
+                  className={styles.inputField}
+                />
               </label>
+
               <label className={styles.inputLabel}>
                 Email
-                <input type="email" name="email" required className={styles.inputField} />
+                <input type="email" name="email_id" required className={styles.inputField} />
               </label>
-              <div className={styles.invalidText}>
-                <ValidationError prefix="Provided mail" field="email" errors={state.errors} />
-              </div>
+
               <label className={styles.messageField}>
                 Message
-                <textarea required></textarea>
+                <textarea required minLength={5} name="message"></textarea>
               </label>
-              <div className={styles.invalidText}>
-                <ValidationError prefix="Message" field="message" errors={state.errors} />
-              </div>
+
               <button type="submit" className={styles.contactBtn}>
                 Send Message
               </button>
