@@ -35,10 +35,10 @@
 }
 
 .coverImg {
-  @apply relative mb-5;
+  @apply relative mb-5 h-44 w-full;
 }
 .coverImg img {
-  @apply h-44 w-full overflow-hidden object-cover rounded-lg;
+  @apply overflow-hidden object-cover rounded-lg;
 }
 
 .projectTitle {

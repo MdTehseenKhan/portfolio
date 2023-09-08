@@ -1,12 +1,9 @@
 import Image from "next/image"
-import { client } from "@/client"
-import { useNextSanityImage } from "next-sanity-image"
+import { skills } from "@/constants"
 
 import styles from "@/styles/Skills.module.css"
 
-const Skills = ({ skills }) => {
-  skills.sort((a, b) => parseInt(a.serial_no) - parseInt(b.serial_no))
-
+const Skills = () => {
   return (
     <section id="skills" className={styles.skillsSection}>
       <div className={styles.skillsContainer}>
@@ -18,10 +15,10 @@ const Skills = ({ skills }) => {
         <h2 className={styles.title}>🚀 Skills</h2>
 
         <div className={styles.skills}>
-          {skills?.map(({ _id, name, bgColor, icon }) => (
-            <div key={_id} className={styles.skill}>
-              <div title={name} className={styles.skillCircle} style={{ background: bgColor + "20" }}>
-                <Image {...useNextSanityImage(client, icon)} alt={name} className={styles.skillImg} />
+          {skills?.map(({ name, bgColor, image }, i) => (
+            <div key={i + name} className={styles.skill}>
+              <div title={name} className={styles.skillCircle} style={{ background: bgColor }}>
+                <Image src={image} alt={name} fill className={styles.skillImg} />
               </div>
               <h3 className={styles.skillName}>{name}</h3>
             </div>

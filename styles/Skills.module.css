@@ -30,7 +30,7 @@
   @apply relative rounded-full w-32 h-32 p-5 bg-opacity-20 bg-purple-400;
 }
 .skillImg {
-  @apply w-full h-full pointer-events-none;
+  @apply p-7 pointer-events-none;
 }
 .skillName {
   @apply text-gray-300;

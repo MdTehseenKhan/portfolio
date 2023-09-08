@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react"
-import { useScroll } from "framer-motion"
 import { HiHome, HiUserCircle, HiBriefcase, HiOutlineViewGridAdd, HiMail } from "react-icons/hi"
 
 const navItems = [
@@ -28,12 +26,6 @@ const navItems = [
 import styles from "@/styles/FloatingBar.module.css"
 
 export default function FloatingBar({ active, setActive }) {
-  const { scrollYProgress } = useScroll()
-
-  useEffect(() => {
-    console.log(scrollYProgress.current)
-  }, [])
-
   return (
     <>
       <div className={styles.floatingBar}>
@@ -43,10 +35,7 @@ export default function FloatingBar({ active, setActive }) {
               key={`nav-${i}`}
               href={`#${item}`}
               title={item}
-              onClick={() => {
-                document.getElementById(item).scrollIntoView({ behavior: "smooth" })
-                setActive(item)
-              }}
+              onClick={() => setActive(item)}
               className={`p-3 hover:text-white hover:bg-gray-800 rounded-full ${
                 item === active ? "text-white bg-pink-700 hover:bg-pink-800" : ""
               }`}
