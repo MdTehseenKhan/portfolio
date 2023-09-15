@@ -16,7 +16,7 @@
   @apply uppercase mb-8 text-2xl font-bold relative -ml-3;
 }
 .list {
-  @apply list-disc list-inside my-2 text-sm md:text-base;
+  @apply list-disc list-inside my-2 text-sm md:text-base text-gray-400;
 }
 
 .profilePic {
