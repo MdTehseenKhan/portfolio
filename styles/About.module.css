@@ -10,7 +10,7 @@
   @apply w-full flex flex-col lg:flex-row justify-center items-center;
 }
 .details {
-  @apply -mt-10 w-full lg:w-4/6 py-20 px-10 pb-44 lg:pb-10 lg:pr-32 bg-black shadow-[0_0_8px_#fff2] bg-[url('/color-sharp2.png')] bg-cover bg-no-repeat bg-right rounded-xl;
+  @apply -mt-10 w-full lg:w-4/6 py-20 px-10 pb-44 lg:pb-10 lg:pr-32 shadow-[0_0_8px_#fff2] rounded-xl bg-[#121212];
 }
 .afterLine {
   @apply uppercase mb-8 text-2xl font-bold relative -ml-3;

@@ -1,4 +1,4 @@
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import Image from "next/image"
 import { toast } from "react-hot-toast"
 
@@ -10,9 +10,11 @@ import styles from "@/styles/Footer.module.css"
 
 const Footer = () => {
   const formRef = useRef()
+  const [isLoading, setIsLoading] = useState(false)
 
   function handleSubmit(e) {
     e.preventDefault()
+    setIsLoading(true)
 
     emailjs
       .sendForm(
@@ -33,6 +35,7 @@ const Footer = () => {
           toast.error("Something went wrong!")
         }
       )
+      .finally(() => setIsLoading(false))
   }
 
   return (
@@ -70,8 +73,8 @@ const Footer = () => {
                 <textarea required minLength={5} name="message"></textarea>
               </label>
 
-              <button type="submit" className={styles.contactBtn}>
-                Send Message
+              <button type="submit" className={styles.contactBtn} disabled={isLoading}>
+                {isLoading ? "Sending..." : "Send Message"}
               </button>
             </form>
 

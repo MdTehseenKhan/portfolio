@@ -22,17 +22,14 @@ export default function Confidential() {
         <div
           className="
           max-w-sm  
-          bg-black 
-          bg-[url('/color-sharp2.png')] 
-          bg-cover 
-          bg-no-repeat 
+          bg-[#121212] 
           rounded-md 
-          shadow-md
+          shadow-[0_0_8px_#fff2]
           p-7 
         "
         >
-          <h1 className="uppercase text-white text-2xl font-bold">
-            Note
+          <h1 className="pb-3 uppercase text-white text-2xl font-bold">
+            📝 Note
           </h1>
           <p className="text-sm text-gray-400 text-justify">
             I'm pleased to inform you that I've successfully completed this project for a client.
