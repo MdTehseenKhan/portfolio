@@ -18,12 +18,12 @@ export const works = [
     link: "https://ai-fest.vercel.app/",
     codeLink: "https://github.com/MdTehseenKhan/competition",
   },
-  {
-    title: "AirBNB Clone",
-    image: "/works/airbnb-elite.png",
-    link: "https://airbnb-elite.vercel.app/",
-    codeLink: "https://github.com/MdTehseenKhan/airbnb-elite",
-  },
+  // {
+  //   title: "AirBNB Clone",
+  //   image: "/works/airbnb-elite.png",
+  //   link: "https://airbnb-elite.vercel.app/",
+  //   codeLink: "https://github.com/MdTehseenKhan/airbnb-elite",
+  // },
   {
     title: "Apex Modern Business",
     image: "/works/apex-modern.png",
