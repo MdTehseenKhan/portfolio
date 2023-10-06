@@ -6,12 +6,12 @@ export const works = [
     link: "https://fitness-freak-gym.netlify.app",
     codeLink: "https://github.com/MdTehseenKhan/fitness-freak-gym",
   },
-  {
-    title: "Expense Tracker",
-    image: "/works/expense-tracker.png",
-    link: "https://expense--tracking.vercel.app",
-    codeLink: "https://github.com/MdTehseenKhan/expense-tracker",
-  },
+  // {
+  //   title: "Expense Tracker",
+  //   image: "/works/expense-tracker.png",
+  //   link: "https://expense--tracking.vercel.app",
+  //   codeLink: "/confidential",
+  // },
   {
     title: "Research Center for AI",
     image: "/works/ai-fest.png",
@@ -30,24 +30,24 @@ export const works = [
     link: "https://apex-modern.vercel.app/",
     codeLink: "/confidential",
   },
-  {
-    title: "SMT Academy",
-    image: "/works/smt-academy.png",
-    link: "https://smt-academy.vercel.app/",
-    codeLink: "/confidential",
-  },
-  {
-    title: "Portal of Truth",
-    image: "/works/pot-local.png",
-    link: "https://pot-local.vercel.app/",
-    codeLink: "/confidential",
-  },
-  {
-    title: "Metatixus Labs",
-    image: "/works/metatixus.png",
-    link: "https://metatixus.vercel.app/",
-    codeLink: "/confidential",
-  },
+  // {
+  //   title: "SMT Academy",
+  //   image: "/works/smt-academy.png",
+  //   link: "https://smt-academy.vercel.app/",
+  //   codeLink: "/confidential",
+  // },
+  // {
+  //   title: "Portal of Truth",
+  //   image: "/works/pot-local.png",
+  //   link: "https://pot-local.vercel.app/",
+  //   codeLink: "/confidential",
+  // },
+  // {
+  //   title: "Metatixus Labs",
+  //   image: "/works/metatixus.png",
+  //   link: "https://metatixus.vercel.app/",
+  //   codeLink: "/confidential",
+  // },
   {
     title: "Pokemons App",
     image: "/works/pokemon.png",
