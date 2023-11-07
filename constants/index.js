@@ -6,12 +6,12 @@ export const works = [
     link: "https://fitness-freak-gym.netlify.app",
     codeLink: "https://github.com/MdTehseenKhan/fitness-freak-gym",
   },
-  {
-    title: "Expense Tracker",
-    image: "/works/expense-tracker.png",
-    link: "https://expense--tracking.vercel.app",
-    codeLink: "/confidential",
-  },
+  // {
+  //   title: "Expense Tracker",
+  //   image: "/works/expense-tracker.png",
+  //   link: "https://expense--tracking.vercel.app",
+  //   codeLink: "/confidential",
+  // },
   {
     title: "Research Center for AI",
     image: "/works/ai-fest.png",
